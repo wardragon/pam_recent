@@ -6,7 +6,7 @@ pam_recent: pam_recent.c
 	@echo "CFLAGS=$(CFLAGS)" | \
 		fold -s -w 70 | \
 		sed -e 's/^/# /'
-	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDCFLAGS) -o $@ $^
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDCFLAGS) -o $@.so $^
 
 install: pam_recent
 	install -D src/hello \
