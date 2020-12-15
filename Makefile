@@ -9,7 +9,7 @@ pam_recent: pam_recent.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDCFLAGS) -o $@.so $^
 
 install: pam_recent
-	install -D src/hello \
+	install -D pam_recent.so \
 		$(DESTDIR)$(prefix)/pam_recent.so
 
 clean:
