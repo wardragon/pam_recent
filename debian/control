@@ -5,7 +5,7 @@ Maintainer: Paolo Cerrito <paolo.cerrito@uniroma2.it>
 Build-Depends: debhelper (>= 10)
 Standards-Version: 4.4.1
 
-Package: falcot-data
+Package: pam_recent
 Architecture: all
 Depends: libpam0g, ${misc:Depends}
 Description: PAM Recent Module
