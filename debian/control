@@ -2,12 +2,12 @@ Source: pam-recent
 Section: misc
 Priority: optional
 Maintainer: Paolo Cerrito <paolo.cerrito@uniroma2.it>
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), libpam0g-dev
 Standards-Version: 4.4.1
 
 Package: pam-recent
 Architecture: all
-Depends: libpam0g, ${misc:Depends}
+Depends:  ${misc:Depends}
 Description: PAM Recent Module
    This is a pam module for linux systems to adjust an iptables recent list, 
    which makes the rate limiting of connections from unknown locations easier.
